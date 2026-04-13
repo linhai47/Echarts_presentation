@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apache ECharts 交互式可视分析演示</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Cpath d='M14 42 26 22l10 16 8-10 8 18' stroke='%2360a5fa' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <!-- 引入 Geist 字体体系 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/presentation.css?v=20260413-cover-premium" />
+  </head>
+  <body>
+    <div class="presentation-container">
+      <div class="presentation-progress" aria-hidden="true">
+        <span id="progress-bar" class="presentation-progress__bar"></span>
+      </div>
+      
+      <!-- 1. 封面屏 -->
+      <section class="slide slide--cover" id="slide-1">
+        <div class="slide__inner">
+          <div class="cover">
+            <div class="cover__main">
+              <div class="cover__kicker">
+                <p class="eyebrow">课程汇报演示</p>
+                <span class="cover__signal-pill">Interaction First</span>
+              </div>
+              <h1><span class="cover__brand">Apache ECharts</span><br/>交互式可视分析<br/>演示</h1>
+              <p class="subtitle cover__subtitle">把关系表达、视觉映射与多图联动收进一个统一界面。</p>
+              <div class="cover__meta-strip" aria-label="封面信息">
+                <article class="cover__meta-card">
+                  <span class="cover__meta-label">场景</span>
+                  <strong>数据可视化课程汇报</strong>
+                </article>
+                <article class="cover__meta-card">
+                  <span class="cover__meta-label">载体</span>
+                  <strong>知识关系交互看板</strong>
+                </article>
+                <article class="cover__meta-card cover__meta-card--signal">
+                  <span class="cover__meta-label">核心信号</span>
+                  <strong>交互优先</strong>
+                </article>
+              </div>
+            </div>
+            <div class="cover__visual" aria-hidden="true">
+              <div class="cover-orbit">
+                <span class="cover-orbit__halo"></span>
+                <span class="cover-orbit__ring cover-orbit__ring--outer"></span>
+                <span class="cover-orbit__ring cover-orbit__ring--mid"></span>
+                <span class="cover-orbit__ring cover-orbit__ring--inner"></span>
+                <span class="cover-orbit__beam cover-orbit__beam--one"></span>
+                <span class="cover-orbit__beam cover-orbit__beam--two"></span>
+                <span class="cover-orbit__node cover-orbit__node--one"></span>
+                <span class="cover-orbit__node cover-orbit__node--two"></span>
+                <span class="cover-orbit__node cover-orbit__node--three"></span>
+                <span class="cover-orbit__pulse"></span>
+                <div class="cover-orbit__card">Graph · Linked Views</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 问题与目标屏 -->
+      <section class="slide slide--problem" id="slide-2">
+        <div class="slide__inner">
+          <h2>静态图能展示结果，<br/>交互图才能支持探索</h2>
+          <div class="two-column mt-large">
+            <article class="panel">
+              <h3>静态图的问题</h3>
+              <ul class="bullet-list">
+                <li>只能看结果，难以看清分析过程</li>
+                <li>单张图很难同时表达关系、属性和局部结构</li>
+              </ul>
+            </article>
+            <article class="panel panel--accent">
+              <h3>这个 Demo 的目标</h3>
+              <ul class="bullet-list">
+                <li>让观众在汇报中直接点击、筛选和聚焦</li>
+                <li>用一个统一界面讲清 ECharts 的综合能力</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 为什么选择 ECharts -->
+      <section class="slide slide--why-echarts" id="slide-3">
+        <div class="slide__inner">
+          <p class="eyebrow">技术选型</p>
+          <h2>为什么是 ECharts</h2>
+          <div class="two-column mt-large">
+            <article class="feature-card feature-card--hero">
+              <p class="eyebrow">Graph</p>
+              <h3>关系结构天然可见</h3>
+              <p>知识点之间的前置、关联和层次可以直接被看见。</p>
+            </article>
+            <article class="feature-card feature-card--hero">
+              <p class="eyebrow">Dashboard</p>
+              <h3>交互分析更自然</h3>
+              <p>多图联动、动态更新和组件协同都能低成本成立。</p>
+            </article>
+          </div>
+          <p class="callout mt-medium">Graph + VisualMap + Events + setOption，让 ECharts 更像交互分析界面，而不只是图表库。</p>
+        </div>
+      </section>
+
+      <!-- 4. 与 Matplotlib 的对比屏 -->
+      <section class="slide slide--comparison" id="slide-4">
+        <div class="slide__inner">
+          <h2>差别不在能不能画图，<br/>而在能不能让人探索</h2>
+          <div class="two-column comparison-panels mt-large">
+            <article class="panel compare-panel">
+              <p class="eyebrow">Matplotlib</p>
+              <h3>更像结果输出</h3>
+              <ul class="bullet-list">
+                <li>擅长静态结果和论文插图</li>
+                <li>交互、联动和下钻都不是默认能力</li>
+              </ul>
+            </article>
+            <article class="panel panel--accent compare-panel">
+              <p class="eyebrow">Apache ECharts</p>
+              <h3>更像分析界面</h3>
+              <ul class="bullet-list">
+                <li>天然适合浏览器中的交互式展示</li>
+                <li>点击、筛选和联动都可以直接成为体验的一部分</li>
+              </ul>
+            </article>
+          </div>
+          <p class="callout mt-medium">这次汇报要展示的是探索过程，而不是结果截图。</p>
+        </div>
+      </section>
+
+      <!-- 5. ECharts 核心能力拆解屏 -->
+      <section class="slide slide--capabilities" id="slide-5">
+        <div class="slide__inner">
+          <h2>这个 Demo 重点展示四件事</h2>
+          <div class="quad-grid mt-large">
+            <article class="capability-card">
+              <h3>Graph</h3>
+              <p>关系结构一眼可见。</p>
+            </article>
+            <article class="capability-card">
+              <h3>VisualMap</h3>
+              <p>属性直接映射为视觉。</p>
+            </article>
+            <article class="capability-card">
+              <h3>Connect</h3>
+              <p>主图与辅图同步联动。</p>
+            </article>
+            <article class="capability-card">
+              <h3>State</h3>
+              <p>筛选与切换即时更新。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. 核心 Demo 展示屏 -->
+      <section class="slide slide--demo" id="slide-6">
+        <div class="slide__inner slide__inner--full">
+          <div class="demo-stage">
+            <div class="demo-stage__head">
+              <div class="demo-stage__title">
+                <p class="eyebrow">核心演示</p>
+                <h3>交互式知识关系分析看板</h3>
+              </div>
+              <div class="demo-stage__meta" aria-label="演示标签">
+                <span>Live</span>
+                <span>Interactive</span>
+                <span>Linked Views</span>
+              </div>
+            </div>
+            <div class="demo-layout">
+              <div class="demo-layout__frame">
+                <!-- 嵌入现有的项目 Demo -->
+                <iframe src="./index.html?embed=presentation&v=20260413-presentation-embed" title="ECharts Knowledge Dashboard Demo"></iframe>
+              </div>
+              <aside class="demo-cue">
+                <p class="demo-cue__label">看三件事</p>
+                <ul class="bullet-list bullet-list--small">
+                  <li>点击节点：进入局部分析</li>
+                  <li>点击辅图：反向驱动主图</li>
+                  <li>颜色与大小：同时编码难度和重要度</li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. 技术实现与架构屏 -->
+      <section class="slide slide--architecture" id="slide-7">
+        <div class="slide__inner">
+          <p class="eyebrow">技术架构</p>
+          <h2>从数据到交互，<br/>结构比堆功能更重要</h2>
+          <div class="two-column mt-large">
+            <div class="architecture-diagram">
+              <div class="diagram-box">JSON 数据源 (Nodes / Links)</div>
+              <div class="diagram-arrow">↓</div>
+              <div class="diagram-box">Store 状态层 (Filters / Focus)</div>
+              <div class="diagram-arrow">↓</div>
+              <div class="diagram-box diagram-box--accent">过滤层 (Filtering Engine)</div>
+              <div class="diagram-arrow">↙ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ↘</div>
+              <div class="diagram-split">
+                <div class="diagram-box">UI 面板层 (Header / Detail)</div>
+                <div class="diagram-box">图表层 (Graph / Bar / Pie)</div>
+              </div>
+            </div>
+            <div class="signal-stack">
+              <article class="signal-card">
+                <h3>静态数据</h3>
+                <p>本地 JSON 即可驱动整页。</p>
+              </article>
+              <article class="signal-card">
+                <h3>统一状态</h3>
+                <p>筛选与聚焦共用一套状态。</p>
+              </article>
+              <article class="signal-card">
+                <h3>模块实现</h3>
+                <p>图表、面板和过滤逻辑分层组织。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. 总结屏 -->
+      <section class="slide slide--closing" id="slide-8">
+        <div class="slide__inner">
+          <h2>ECharts 适合的不只是画图，<br/>更是分析体验</h2>
+          <div class="closing-grid mt-large">
+            <article class="closing-card">
+              <p>能表达关系，<br/>不只是统计结果</p>
+            </article>
+            <article class="closing-card">
+              <p>能联动多个视图，<br/>不只是单张图表</p>
+            </article>
+            <article class="closing-card">
+              <p>更适合演示型、探索型的<br/>前端可视化</p>
+            </article>
+          </div>
+          <p class="callout callout--accent mt-medium">这个 Demo 展示的不是知识图谱本身，而是 ECharts 在交互式分析中的表现力。</p>
+        </div>
+      </section>
+
+      <!-- 全局导航与控制 -->
+      <div class="presentation-controls">
+        <button id="prev-btn" class="nav-btn" title="上一页 (上/左箭头)">←</button>
+        <span class="page-indicator"><span id="current-page">1</span> / 8</span>
+        <button id="next-btn" class="nav-btn" title="下一页 (下/右箭头)">→</button>
+      </div>
+
+    </div>
+
+    <!-- 简单的翻页逻辑脚本 -->
+    <script>
+      const container = document.querySelector('.presentation-container');
+      const slides = document.querySelectorAll('.slide');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const pageIndicator = document.getElementById('current-page');
+      const progressBar = document.getElementById('progress-bar');
+      let currentIndex = 0;
+      let previousIndex = 0;
+
+      function updateSlides() {
+        const direction = currentIndex >= previousIndex ? 'next' : 'prev';
+        container.dataset.direction = direction;
+
+        slides.forEach((slide, index) => {
+          slide.classList.remove('active');
+          if (index === currentIndex) {
+            slide.classList.add('active');
+          }
+        });
+        pageIndicator.textContent = currentIndex + 1;
+        progressBar.style.width = `${((currentIndex + 1) / slides.length) * 100}%`;
+        
+        // 按钮状态
+        prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '1';
+        prevBtn.style.cursor = currentIndex === 0 ? 'default' : 'pointer';
+        nextBtn.style.opacity = currentIndex === slides.length - 1 ? '0.3' : '1';
+        nextBtn.style.cursor = currentIndex === slides.length - 1 ? 'default' : 'pointer';
+        previousIndex = currentIndex;
+      }
+
+      function nextSlide() {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+          updateSlides();
+        }
+      }
+
+      function prevSlide() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSlides();
+        }
+      }
+
+      nextBtn.addEventListener('click', nextSlide);
+      prevBtn.addEventListener('click', prevSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+          nextSlide();
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+          prevSlide();
+        }
+      });
+
+      // 初始化
+      updateSlides();
+    </script>
+  </body>
+</html>

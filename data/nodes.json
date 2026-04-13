@@ -1,0 +1,338 @@
+[
+    {
+        "id":  "n01",
+        "name":  "数组基础",
+        "category":  "线性结构",
+        "summary":  "介绍顺序存储、随机访问与常见操作。",
+        "difficulty":  1,
+        "importance":  2
+    },
+    {
+        "id":  "n02",
+        "name":  "链表基础",
+        "category":  "线性结构",
+        "summary":  "介绍节点连接、插入删除与单向链表。",
+        "difficulty":  2,
+        "importance":  3
+    },
+    {
+        "id":  "n03",
+        "name":  "栈",
+        "category":  "线性结构",
+        "summary":  "理解后进先出结构及其典型应用。",
+        "difficulty":  1,
+        "importance":  2
+    },
+    {
+        "id":  "n04",
+        "name":  "队列",
+        "category":  "线性结构",
+        "summary":  "理解先进先出结构及其典型应用。",
+        "difficulty":  1,
+        "importance":  2
+    },
+    {
+        "id":  "n05",
+        "name":  "双端队列",
+        "category":  "线性结构",
+        "summary":  "掌握两端进出的灵活队列结构。",
+        "difficulty":  2,
+        "importance":  2
+    },
+    {
+        "id":  "n06",
+        "name":  "字符串基础",
+        "category":  "线性结构",
+        "summary":  "掌握字符串存储、遍历与匹配前置知识。",
+        "difficulty":  2,
+        "importance":  3
+    },
+    {
+        "id":  "n07",
+        "name":  "二叉树",
+        "category":  "树结构",
+        "summary":  "树结构入门，理解父子关系与遍历方式。",
+        "difficulty":  2,
+        "importance":  3
+    },
+    {
+        "id":  "n08",
+        "name":  "二叉搜索树",
+        "category":  "树结构",
+        "summary":  "掌握有序树结构及查找插入删除操作。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n09",
+        "name":  "平衡二叉树",
+        "category":  "树结构",
+        "summary":  "理解平衡条件与高度维护。",
+        "difficulty":  4,
+        "importance":  4
+    },
+    {
+        "id":  "n10",
+        "name":  "堆",
+        "category":  "树结构",
+        "summary":  "掌握完全二叉树与优先级管理。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n11",
+        "name":  "Trie 树",
+        "category":  "树结构",
+        "summary":  "用于字符串前缀检索与词典匹配。",
+        "difficulty":  3,
+        "importance":  3
+    },
+    {
+        "id":  "n12",
+        "name":  "线段树",
+        "category":  "树结构",
+        "summary":  "用于区间查询、区间修改等高级操作。",
+        "difficulty":  4,
+        "importance":  5
+    },
+    {
+        "id":  "n13",
+        "name":  "图基础",
+        "category":  "图结构",
+        "summary":  "理解顶点、边、邻接表与邻接矩阵。",
+        "difficulty":  2,
+        "importance":  3
+    },
+    {
+        "id":  "n14",
+        "name":  "深度优先搜索",
+        "category":  "图结构",
+        "summary":  "掌握递归式搜索与遍历思路。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n15",
+        "name":  "广度优先搜索",
+        "category":  "图结构",
+        "summary":  "掌握分层遍历与最短路径基础。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n16",
+        "name":  "最短路径",
+        "category":  "图结构",
+        "summary":  "理解单源最短路与路径松弛思想。",
+        "difficulty":  4,
+        "importance":  5
+    },
+    {
+        "id":  "n17",
+        "name":  "最小生成树",
+        "category":  "图结构",
+        "summary":  "理解连接所有节点的最小代价方案。",
+        "difficulty":  4,
+        "importance":  4
+    },
+    {
+        "id":  "n18",
+        "name":  "拓扑排序",
+        "category":  "图结构",
+        "summary":  "掌握有向无环图中的依赖排序。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n19",
+        "name":  "顺序查找",
+        "category":  "查找",
+        "summary":  "掌握最基础的逐个比对查找方法。",
+        "difficulty":  1,
+        "importance":  2
+    },
+    {
+        "id":  "n20",
+        "name":  "二分查找",
+        "category":  "查找",
+        "summary":  "掌握有序数组上的折半查找。",
+        "difficulty":  2,
+        "importance":  4
+    },
+    {
+        "id":  "n21",
+        "name":  "哈希查找",
+        "category":  "查找",
+        "summary":  "理解哈希表支持的快速定位。",
+        "difficulty":  2,
+        "importance":  4
+    },
+    {
+        "id":  "n22",
+        "name":  "插值查找",
+        "category":  "查找",
+        "summary":  "理解按值分布估算位置的查找方式。",
+        "difficulty":  3,
+        "importance":  2
+    },
+    {
+        "id":  "n23",
+        "name":  "斐波那契查找",
+        "category":  "查找",
+        "summary":  "掌握基于斐波那契数列划分区间的查找。",
+        "difficulty":  3,
+        "importance":  2
+    },
+    {
+        "id":  "n24",
+        "name":  "冒泡排序",
+        "category":  "排序",
+        "summary":  "理解相邻比较与逐步交换的基本排序。",
+        "difficulty":  1,
+        "importance":  1
+    },
+    {
+        "id":  "n25",
+        "name":  "选择排序",
+        "category":  "排序",
+        "summary":  "理解每轮选择最值的排序过程。",
+        "difficulty":  1,
+        "importance":  1
+    },
+    {
+        "id":  "n26",
+        "name":  "插入排序",
+        "category":  "排序",
+        "summary":  "理解局部有序逐步扩展的排序思路。",
+        "difficulty":  2,
+        "importance":  2
+    },
+    {
+        "id":  "n27",
+        "name":  "归并排序",
+        "category":  "排序",
+        "summary":  "理解分治合并的稳定排序方法。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n28",
+        "name":  "快速排序",
+        "category":  "排序",
+        "summary":  "理解划分递归带来的高效排序。",
+        "difficulty":  3,
+        "importance":  5
+    },
+    {
+        "id":  "n29",
+        "name":  "堆排序",
+        "category":  "排序",
+        "summary":  "理解利用堆结构进行排序的方法。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n30",
+        "name":  "桶排序",
+        "category":  "排序",
+        "summary":  "理解分桶和线性分布统计的排序思想。",
+        "difficulty":  4,
+        "importance":  3
+    },
+    {
+        "id":  "n31",
+        "name":  "算法思想概览",
+        "category":  "算法思想",
+        "summary":  "作为算法思想的总览入口。",
+        "difficulty":  2,
+        "importance":  3
+    },
+    {
+        "id":  "n32",
+        "name":  "递归",
+        "category":  "算法思想",
+        "summary":  "理解函数自我调用与问题分解。",
+        "difficulty":  2,
+        "importance":  3
+    },
+    {
+        "id":  "n33",
+        "name":  "分治",
+        "category":  "算法思想",
+        "summary":  "理解拆分、求解、合并的核心策略。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n34",
+        "name":  "贪心",
+        "category":  "算法思想",
+        "summary":  "理解局部最优导向整体最优的策略。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n35",
+        "name":  "动态规划",
+        "category":  "算法思想",
+        "summary":  "理解状态定义、转移方程与记忆化。",
+        "difficulty":  5,
+        "importance":  5
+    },
+    {
+        "id":  "n36",
+        "name":  "回溯",
+        "category":  "算法思想",
+        "summary":  "理解试探、撤销与搜索树的遍历。",
+        "difficulty":  4,
+        "importance":  4
+    },
+    {
+        "id":  "n37",
+        "name":  "枚举",
+        "category":  "算法思想",
+        "summary":  "理解穷举所有候选解的基本思路。",
+        "difficulty":  2,
+        "importance":  2
+    },
+    {
+        "id":  "n38",
+        "name":  "高级专题概览",
+        "category":  "高级专题",
+        "summary":  "作为高级专题的总览入口。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n39",
+        "name":  "并查集",
+        "category":  "高级专题",
+        "summary":  "掌握集合合并与连通性判断。",
+        "difficulty":  3,
+        "importance":  4
+    },
+    {
+        "id":  "n40",
+        "name":  "KMP 字符串匹配",
+        "category":  "高级专题",
+        "summary":  "掌握前缀函数与高效模式匹配。",
+        "difficulty":  4,
+        "importance":  4
+    },
+    {
+        "id":  "n41",
+        "name":  "位运算",
+        "category":  "高级专题",
+        "summary":  "理解按位与、或、异或和移位操作。",
+        "difficulty":  2,
+        "importance":  3
+    },
+    {
+        "id":  "n42",
+        "name":  "LRU 缓存",
+        "category":  "高级专题",
+        "summary":  "理解最近最少使用的缓存淘汰策略。",
+        "difficulty":  4,
+        "importance":  5
+    }
+]

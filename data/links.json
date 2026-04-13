@@ -1,0 +1,452 @@
+[
+  {
+    "source": "n01",
+    "target": "n02",
+    "relation": "先修"
+  },
+  {
+    "source": "n01",
+    "target": "n03",
+    "relation": "先修"
+  },
+  {
+    "source": "n01",
+    "target": "n04",
+    "relation": "先修"
+  },
+  {
+    "source": "n01",
+    "target": "n06",
+    "relation": "先修"
+  },
+  {
+    "source": "n02",
+    "target": "n07",
+    "relation": "先修"
+  },
+  {
+    "source": "n03",
+    "target": "n04",
+    "relation": "先修"
+  },
+  {
+    "source": "n03",
+    "target": "n05",
+    "relation": "先修"
+  },
+  {
+    "source": "n04",
+    "target": "n15",
+    "relation": "先修"
+  },
+  {
+    "source": "n05",
+    "target": "n15",
+    "relation": "先修"
+  },
+  {
+    "source": "n06",
+    "target": "n11",
+    "relation": "先修"
+  },
+  {
+    "source": "n06",
+    "target": "n40",
+    "relation": "先修"
+  },
+  {
+    "source": "n07",
+    "target": "n08",
+    "relation": "先修"
+  },
+  {
+    "source": "n07",
+    "target": "n09",
+    "relation": "先修"
+  },
+  {
+    "source": "n07",
+    "target": "n10",
+    "relation": "先修"
+  },
+  {
+    "source": "n08",
+    "target": "n20",
+    "relation": "先修"
+  },
+  {
+    "source": "n09",
+    "target": "n12",
+    "relation": "先修"
+  },
+  {
+    "source": "n10",
+    "target": "n29",
+    "relation": "先修"
+  },
+  {
+    "source": "n11",
+    "target": "n40",
+    "relation": "先修"
+  },
+  {
+    "source": "n12",
+    "target": "n35",
+    "relation": "先修"
+  },
+  {
+    "source": "n13",
+    "target": "n14",
+    "relation": "先修"
+  },
+  {
+    "source": "n13",
+    "target": "n15",
+    "relation": "先修"
+  },
+  {
+    "source": "n13",
+    "target": "n16",
+    "relation": "先修"
+  },
+  {
+    "source": "n13",
+    "target": "n17",
+    "relation": "先修"
+  },
+  {
+    "source": "n13",
+    "target": "n18",
+    "relation": "先修"
+  },
+  {
+    "source": "n14",
+    "target": "n36",
+    "relation": "先修"
+  },
+  {
+    "source": "n15",
+    "target": "n18",
+    "relation": "先修"
+  },
+  {
+    "source": "n16",
+    "target": "n34",
+    "relation": "先修"
+  },
+  {
+    "source": "n17",
+    "target": "n39",
+    "relation": "先修"
+  },
+  {
+    "source": "n18",
+    "target": "n35",
+    "relation": "先修"
+  },
+  {
+    "source": "n19",
+    "target": "n20",
+    "relation": "先修"
+  },
+  {
+    "source": "n20",
+    "target": "n22",
+    "relation": "先修"
+  },
+  {
+    "source": "n20",
+    "target": "n23",
+    "relation": "先修"
+  },
+  {
+    "source": "n24",
+    "target": "n25",
+    "relation": "先修"
+  },
+  {
+    "source": "n25",
+    "target": "n26",
+    "relation": "先修"
+  },
+  {
+    "source": "n26",
+    "target": "n27",
+    "relation": "先修"
+  },
+  {
+    "source": "n27",
+    "target": "n28",
+    "relation": "先修"
+  },
+  {
+    "source": "n28",
+    "target": "n29",
+    "relation": "先修"
+  },
+  {
+    "source": "n29",
+    "target": "n30",
+    "relation": "先修"
+  },
+  {
+    "source": "n31",
+    "target": "n32",
+    "relation": "包含"
+  },
+  {
+    "source": "n31",
+    "target": "n33",
+    "relation": "包含"
+  },
+  {
+    "source": "n31",
+    "target": "n34",
+    "relation": "包含"
+  },
+  {
+    "source": "n31",
+    "target": "n35",
+    "relation": "包含"
+  },
+  {
+    "source": "n31",
+    "target": "n36",
+    "relation": "包含"
+  },
+  {
+    "source": "n31",
+    "target": "n37",
+    "relation": "包含"
+  },
+  {
+    "source": "n38",
+    "target": "n39",
+    "relation": "包含"
+  },
+  {
+    "source": "n38",
+    "target": "n40",
+    "relation": "包含"
+  },
+  {
+    "source": "n38",
+    "target": "n41",
+    "relation": "包含"
+  },
+  {
+    "source": "n38",
+    "target": "n42",
+    "relation": "包含"
+  },
+  {
+    "source": "n10",
+    "target": "n29",
+    "relation": "包含"
+  },
+  {
+    "source": "n11",
+    "target": "n40",
+    "relation": "包含"
+  },
+  {
+    "source": "n13",
+    "target": "n14",
+    "relation": "包含"
+  },
+  {
+    "source": "n13",
+    "target": "n15",
+    "relation": "包含"
+  },
+  {
+    "source": "n13",
+    "target": "n16",
+    "relation": "包含"
+  },
+  {
+    "source": "n13",
+    "target": "n17",
+    "relation": "包含"
+  },
+  {
+    "source": "n13",
+    "target": "n18",
+    "relation": "包含"
+  },
+  {
+    "source": "n32",
+    "target": "n27",
+    "relation": "应用到"
+  },
+  {
+    "source": "n32",
+    "target": "n28",
+    "relation": "应用到"
+  },
+  {
+    "source": "n33",
+    "target": "n16",
+    "relation": "应用到"
+  },
+  {
+    "source": "n33",
+    "target": "n17",
+    "relation": "应用到"
+  },
+  {
+    "source": "n34",
+    "target": "n16",
+    "relation": "应用到"
+  },
+  {
+    "source": "n35",
+    "target": "n12",
+    "relation": "应用到"
+  },
+  {
+    "source": "n36",
+    "target": "n19",
+    "relation": "应用到"
+  },
+  {
+    "source": "n37",
+    "target": "n19",
+    "relation": "应用到"
+  },
+  {
+    "source": "n39",
+    "target": "n17",
+    "relation": "应用到"
+  },
+  {
+    "source": "n40",
+    "target": "n06",
+    "relation": "应用到"
+  },
+  {
+    "source": "n41",
+    "target": "n30",
+    "relation": "应用到"
+  },
+  {
+    "source": "n42",
+    "target": "n21",
+    "relation": "应用到"
+  },
+  {
+    "source": "n03",
+    "target": "n04",
+    "relation": "相关"
+  },
+  {
+    "source": "n03",
+    "target": "n05",
+    "relation": "相关"
+  },
+  {
+    "source": "n04",
+    "target": "n05",
+    "relation": "相关"
+  },
+  {
+    "source": "n07",
+    "target": "n08",
+    "relation": "相关"
+  },
+  {
+    "source": "n07",
+    "target": "n09",
+    "relation": "相关"
+  },
+  {
+    "source": "n08",
+    "target": "n09",
+    "relation": "相关"
+  },
+  {
+    "source": "n08",
+    "target": "n10",
+    "relation": "相关"
+  },
+  {
+    "source": "n10",
+    "target": "n29",
+    "relation": "相关"
+  },
+  {
+    "source": "n11",
+    "target": "n40",
+    "relation": "相关"
+  },
+  {
+    "source": "n12",
+    "target": "n27",
+    "relation": "相关"
+  },
+  {
+    "source": "n13",
+    "target": "n16",
+    "relation": "相关"
+  },
+  {
+    "source": "n13",
+    "target": "n17",
+    "relation": "相关"
+  },
+  {
+    "source": "n14",
+    "target": "n35",
+    "relation": "相关"
+  },
+  {
+    "source": "n15",
+    "target": "n18",
+    "relation": "相关"
+  },
+  {
+    "source": "n19",
+    "target": "n20",
+    "relation": "相关"
+  },
+  {
+    "source": "n20",
+    "target": "n23",
+    "relation": "相关"
+  },
+  {
+    "source": "n24",
+    "target": "n25",
+    "relation": "相关"
+  },
+  {
+    "source": "n25",
+    "target": "n26",
+    "relation": "相关"
+  },
+  {
+    "source": "n27",
+    "target": "n28",
+    "relation": "相关"
+  },
+  {
+    "source": "n28",
+    "target": "n29",
+    "relation": "相关"
+  },
+  {
+    "source": "n39",
+    "target": "n41",
+    "relation": "相关"
+  },
+  {
+    "source": "n40",
+    "target": "n06",
+    "relation": "相关"
+  },
+  {
+    "source": "n42",
+    "target": "n21",
+    "relation": "相关"
+  }
+]
